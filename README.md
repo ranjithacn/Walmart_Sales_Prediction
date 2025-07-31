@@ -22,3 +22,22 @@ Walmart, one of the largest retailers in the United states, needs accurate sales
 - **Important Holidays Considered:** Super Bowl, Labour Day, Thanksgiving, Christmas
 - **Holiday weights:** Holiday weeks are given 5x the weight of non-holiday weeks.
 
+## Exploratory Data Analysis
+
+**Univariate Analysis:**
+-'Weekly_Sales' is right skewed
+-'CPI' and 'Fuel_price' show bimodal distributions.
+**Seasonal Trends:**
+-Sales spike in **Winter** (Nov & Dec).
+-Holiday weeks have higher sles.
+**Correlation Heatmap:**
+-Revealed weak to moderate correlations among features and target.
+
+## 🤖 Models and Results
+
+| Model                   | Train Accuracy | Test Accuracy | Best Parameters                                 |
+|------------------------|----------------|---------------|--------------------------------------------------|
+| **Linear Regression (Poly)** | 97.9%         | 96.1%        | `degree=3`                                       |
+| **K-Nearest Neighbors**     | 100%          | 93.8%        | `n_neighbors=5`, `metric=manhattan`, `weights=distance` |
+| **Random Forest Regressor** | 99.4%         | **95.7%**    | Default params (used OneHotEncoding)             |
+
