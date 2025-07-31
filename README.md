@@ -41,3 +41,9 @@ Walmart, one of the largest retailers in the United states, needs accurate sales
 | **K-Nearest Neighbors**     | 100%          | 93.8%        | `n_neighbors=5`, `metric=manhattan`, `weights=distance` |
 | **Random Forest Regressor** | 99.4%         | **95.7%**    | Default params (used OneHotEncoding)             |
 
+## ✅ Conclusion
+
+- **Random Forest Regressor** provided the best performance (Test R² ≈ **95.71%**) and is recommended for deployment.
+- Seasonality and holidays significantly impact sales.
+- Economic indicators (CPI, Fuel Price, Unemployment) had moderate influence.
+
